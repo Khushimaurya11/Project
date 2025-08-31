@@ -91,6 +91,109 @@
             <button class="btn primary">Submit Requirement Ticket</button>
           </div>
           </form>
+
+
+     <main class="page">
+    <section class="tickets-section">
+      <h2 class="section-title">All Tickets</h2>
+
+      <!-- Filters and search -->
+      <div class="controls">
+        <div class="selects">
+          <label class="sr-only" for="status">Status</label>
+          <select id="status" class="control-select">
+            <option>All Statuses</option>
+            <option>Assigned</option>
+            <option>In Review</option>
+            <option>Resolved</option>
+          </select>
+
+          <label class="sr-only" for="type">Type</label>
+          <select id="type" class="control-select">
+            <option>All Types</option>
+            <option>Requirement</option>
+            <option>Issue</option>
+          </select>
+        </div>
+
+        <div class="search-box">
+          <label class="sr-only" for="search">Search</label>
+          <input id="search" type="search" placeholder="Search by ID or Title..." />
+        </div>
+      </div>
+
+      <!-- Tickets table -->
+      <div class="table-wrap">
+        <table class="tickets-table">
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Title</th>
+              <th>Type</th>
+              <th>Priority</th>
+              <th>Status</th>
+              <th>Assigned To</th>
+              <th>Last Updated</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>TKT-001</td>
+              <td>Implement user profile editing feature</td>
+              <td><span class="badge badge-type">Requirement</span></td>
+              <td><span class="badge badge-high">High</span></td>
+              <td><span class="badge badge-assigned">Assigned</span></td>
+              <td>Alice Johnson</td>
+              <td>2 hours ago</td>
+            </tr>
+
+            <tr>
+              <td>TKT-002</td>
+              <td>Bug: Dashboard chart data not loading</td>
+              <td><span class="badge badge-type">Issue</span></td>
+              <td><span class="badge badge-high">High</span></td>
+              <td><span class="badge badge-review">In Review</span></td>
+              <td>Bob Williams</td>
+              <td>1 day ago</td>
+            </tr>
+
+            <tr>
+              <td>TKT-003</td>
+              <td>Add markdown support to chat messages</td>
+              <td><span class="badge badge-type">Requirement</span></td>
+              <td><span class="badge badge-medium">Medium</span></td>
+              <td><span class="badge badge-assigned">Assigned</span></td>
+              <td>Charlie Brown</td>
+              <td>3 days ago</td>
+            </tr>
+
+            <tr>
+              <td>TKT-004</td>
+              <td>Error with file upload for large documents</td>
+              <td><span class="badge badge-type">Issue</span></td>
+              <td><span class="badge badge-high">High</span></td>
+              <td><span class="badge badge-resolved">Resolved</span></td>
+              <td>Diana Prince</td>
+              <td>5 days ago</td>
+            </tr>
+
+            <tr>
+              <td>TKT-005</td>
+              <td>Improve project search functionality performance</td>
+              <td><span class="badge badge-type">Requirement</span></td>
+              <td><span class="badge badge-medium">Medium</span></td>
+              <td><span class="badge badge-assigned">Assigned</span></td>
+              <td>Eve Adams</td>
+              <td>1 week ago</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+
+
+
           </div>
           </div>
       </body>
