@@ -155,22 +155,6 @@ textarea{
   pointer-events: none; 
 }
 
-/* Search Box */
-.search-box {
-  width: 200px;      
-  padding: 8px 12px ;
-  padding-left: 35px;
-  border: 1px solid #ccc;
-  border-radius: 20px;
-  outline: none;
-  font-size: 14px;
-  transition: all 0.3s ease;
-}
-
-.search-box:focus {
-  border-color: #007bff;
-  box-shadow: 0 0 5px rgba(0, 123, 255, 0.4);
-}
 .sidebar {
   width: 200px;
   background: #f9f9f9;
