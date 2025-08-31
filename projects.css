@@ -1,12 +1,13 @@
 body{
   margin:0;
   font-family: Arial, sans-serif;
-  background: #f9f9f9;
+    background: #f4f6f8;
   display: flex;
+    color: #222;
 }
 .sidebar{
   width: 220px;
-  background: #fff;
+  
   border-right: 1px solid #ddd;
   height: 100vh;
   padding: 10px;
@@ -23,7 +24,7 @@ body{
   text-decoration: none;
   color:#333;
 }
-/*.sidebar.menu li.active a{
+.sidebar.menu li.active a{
   font-weight: bold;
   color:#007bff;
 }
@@ -37,7 +38,6 @@ body{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #fff;
   padding: 10px 20px;
   border-bottom: 1px solid #ddd;
 }
@@ -70,11 +70,13 @@ body{
 
 /* Form Container */
 .form-container{
+  height: auto;
   margin-top: 20px;
-  background: #fff;
+ 
   padding: 25px;
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+ 
 }
 .form-container h2{
   margin: 0;
@@ -98,19 +100,36 @@ textarea{
   height: 70px;
   resize: none;
 }
-
-button{
-  margin-top: 20px;
-  padding: 10px 15px;
-  background: #007bff;
-  color: white;
-  border: none;
-  border-radius: 5px;
+.btn {
+  padding: 8px 12px;
+  border: 1px solid #d6dbe3;
+  background: #fff;
+  border-radius: 6px;
   cursor: pointer;
+  font-weight: 500;
 }
-button:hover{
-  background: #0056b3;
+
+.right-buttons {
+  margin-left: auto;
+  display: flex;
+  gap: 10px;
 }
+
+.primary {
+  background: #2d3748;
+  color: #fff;
+  border: none;
+}
+.pagination {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  padding: 12px 0;
+}
+.pagination :hover{
+ background: #444b52;
+}
+
 .row{
   display: flex;
   gap: 20px;
@@ -174,9 +193,31 @@ button:hover{
   font-size: 16px;
   cursor: pointer;
 }
-
 .sidebar ul li i {
   margin-right: 10px;       
 }
+.logout {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  
+  padding: 8px 14px;
+  border: 1px solid #ddd;
+  background: #2f3640;
+  color: #fff;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-bottom: 5px;
+  transition: 0.3s ease;
+}
+.logout i{
+  font-size: 18px;
+}
+.logout:hover {
+  background: #444b52;
+}
+
+
 
 

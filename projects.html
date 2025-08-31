@@ -19,6 +19,9 @@
         <li><a href="#"><i class="fa-regular fa-flag"></i>Reports</a></li>
         <li><a href="#"> <i class="fa-solid fa-gear"></i>Settings</a></li>
       </ul>
+       <button class="logout"> <i class="fa-solid fa-arrow-right-from-bracket"></i>
+        <span>Logout</span>
+      </button>
      </div>
 
      <!-- Main Content -->
@@ -91,9 +94,27 @@
         </select>
       </div>
     </div>
-              <button type="submit">Create Project</button>
-            </form>
-          </div>
-      </div>
-  </body>
-</html>
+    <h3>Visibility</h3>
+    <div class="divisibility options">
+      <label>
+        <input type="radio" id="private" name="visibility" value="private">
+        Only assigned members can view this project
+      </label>
+      <label>
+        <input type="radio" id="team" name="visibility" value="team">
+        All admins can view this project
+      </label>
+       <label>
+        <input type="radio" id="public" name="visibility" value="public">
+         All project managers can view this project
+      </label>
+    </div>
+    <div class="pagination">
+          <button class="btn">Cancel</button>
+          <button class="btn primary">Create Project</button>
+        </div>
+        </form>
+        </div>
+        </div>
+    </body>
+  </html>                

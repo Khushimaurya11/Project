@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Project Management Dashboard</title>
+  <link rel="stylesheet" href="home.css" />
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- Sidebar -->
+    <div class="sidebar"> 
+    <div class="logo">Logo</div>
+   
+    <ul>
+        <li><a href="#"><i class="fa-regular fa-house"></i>Admin Dashboard</a></li>
+       <li> <a href="#"><i class="fa-regular fa-bars-progress"></i>Projects</a></li>
+       <li><a href="#"> <i class="fa-solid fa-list-check"></i>Tasks</a></li>
+        <li><a href="#"> <i class="fa-regular fa-ticket"></i> Tickets</a></li>
+        <li><a href="#"><i class="fa-regular fa-flag"></i>Reports</a></li>
+        <li><a href="#"> <i class="fa-solid fa-gear"></i>Settings</a></li>
+      </ul>
+        <button class="logout"> <i class="fa-solid fa-arrow-right-from-bracket"></i>
+        <span>Logout</span>
+      </button>
+    </div>
+   
+
+  <!-- Main Content -->
+  <main class="main-content">
+    <!-- Navbar -->
+    <nav class="navbar">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="#">Tasks</a></li>
+        <li><a href="#">Tickets</a></li>
+        <li><a href="#">Chat</a></li>
+        <li><a href="#">Reports</a></li>
+      </ul>
+      <div class="nav-icons">
+          <div class="search-container">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          <input type="text" placeholder="Search" class="search-box">
+          </div>
+          <div class="right-section"></div>
+         <i class="fa-solid fa-bell"></i>
+          <span class="notification" >Notifications</span>
+          <i class="fa-solid fa-user"></i>
+         </div>
+         </div>
+    </nav>
+
+    <!-- Project Section -->
+    <section class="form-container">
+      <h1>Project Management</h1>
+
+      <div class="project-list">
+        <h3>Project List</h3>
+        <p>Manage and track all ongoing projects.</p>
+
+        <!-- Filters / actions -->
+        <div class="filters">
+          <input type="text" placeholder="Search projects..." />
+          <button class="btn">Status</button>
+          <button class="btn">Deadline</button>
+
+          <div class="right-buttons">
+            <button class="btn primary">Create New Project</button>
+            <button class="btn">Approve Tasks</button>
+          </div>
+        </div>
+
+        <!-- Table -->
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Project ID</th>
+                <th>Project Name</th>
+                <th>Manager</th>
+                <th>Status</th>
+                <th>Deadline</th>
+                <th>Progress</th>
+                <th>Actions</th>
+              </tr>
+            </thead>
+            <tbody>
+             
+              <tr>
+                <td>PROJ002</td>
+                <td>Mobile App Development</td>
+                <td>John Smith</td>
+                <td><span class="status pending">Pending Review</span></td>
+                <td>2024-07-30</td>
+                <td><div class="progress"><div style="width:50%"></div></div></td>
+                <td><a href="#">View</a></td>
+              </tr>
+              
+              <!-- add more rows as needed -->
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Pagination -->
+        <div class="pagination">
+          <button class="btn">Previous</button>
+          <button class="btn primary">Next</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+</body>
+</html>
