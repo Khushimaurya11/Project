@@ -1,0 +1,97 @@
+  <!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1.0">
+      <title>Create New Project</title>
+      <link rel="stylesheet" href="tickets.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+    </head>
+    <body>
+      <!-- Sidebar -->
+      <div class="sidebar">
+        <div class="logo">LOGO</div>
+        <ul>
+          <li><a href="#"><i class="fa-regular fa-house"></i>Admin Dashboard</a></li>
+        <li> <a href="#"><i class="fa-regular fa-bars-progress"></i>Projects</a></li>
+        <li><a href="#"> <i class="fa-solid fa-list-check"></i>Tasks</a></li>
+          <li><a href="#"> <i class="fa-regular fa-ticket"></i> Tickets</a></li>
+          <li><a href="#"><i class="fa-regular fa-flag"></i>Reports</a></li>
+          <li><a href="#"> <i class="fa-solid fa-gear"></i>Settings</a></li>
+        </ul>
+        
+      </div>
+
+      <!-- Main Content -->
+        <div class="main-content">
+          <!-- Navbar -->
+          <div class="navbar">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#" >Projects</a></li>
+            <li><a href="#">Tasks</a></li>
+              <li><a href="#" class="active">Tickets</a></li>
+            <li><a href="#">Chat</a></li>
+            <li><a href="#">Reports</a></li>
+          </ul>
+          <div class="nav-icons">
+            <div class="search-container">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" placeholder="Search" class="search-box">
+            </div>
+            <div class="right-section"></div>
+          <i class="fa-solid fa-bell"></i>
+            <span class="notification" >Notifications</span>
+            <i class="fa-solid fa-user"></i>
+          </div>
+          </div>
+
+          <!-- Create New Project Form -->
+            <div class="form-container">
+              <h2>Ticket System</h2>
+              <div class="btn-part">
+              <button class="btn primary">Create Requirement Ticket</button>
+                <button class="btn">Create Issue Ticket</button>
+                </div>
+              <form>
+                <h3>Requirement Ticket</h3>
+                <p>Fill in the details to create a new requirement ticket.</p>
+                <label>Title</label>
+                <input type="text" placeholder="Summarize the ticket clearly...">
+
+                <label>Type</label>
+                 <select>
+            <option>Requirements</option>
+            <option>....</option>
+            <option>....</option>
+            <option>....</option>
+          </select>
+
+                <label>Discription</label>
+                <textarea placeholder="Provide a detailed context and necessary information..."></textarea>
+                
+                  <div class="attach-file">
+                <label for="file-upload">Attach File</label>
+                <div class="file-input">
+        <input type="file" id="file-upload" />
+        <span class="file-label">Choose a file...</span>
+        <span class="file-icon">....</span>
+      </div>
+    </div>
+
+                <label>Priority</label>
+          <select>
+            <option>select Priority</option>
+            <option>Low</option>
+            <option>Medium</option>
+            <option>High</option>
+          </select>
+      <div class="pagination">
+            <button class="btn">Cancel</button>
+            <button class="btn primary">Submit Requirement Ticket</button>
+          </div>
+          </form>
+          </div>
+          </div>
+      </body>
+    </html>                
