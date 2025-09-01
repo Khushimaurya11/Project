@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Create New Project</title>
+    <link rel="stylesheet" href="chat.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+  </head>
+  <body>
+    <!-- Sidebar -->
+     <div class="sidebar">
+      <div class="logo">LOGO</div>
+      <ul>
+        <li><a href="#"><i class="fa-regular fa-house"></i>Admin Dashboard</a></li>
+       <li> <a href="#"><i class="fa-regular fa-bars-progress"></i>Projects</a></li>
+       <li><a href="#"> <i class="fa-solid fa-list-check"></i>Tasks</a></li>
+        <li><a href="#"> <i class="fa-regular fa-ticket"></i> Tickets</a></li>
+        <li><a href="#"><i class="fa-regular fa-flag"></i>Reports</a></li>
+        <li><a href="#"> <i class="fa-solid fa-gear"></i>Settings</a></li>
+      </ul>
+       <button class="logout"> <i class="fa-solid fa-arrow-right-from-bracket"></i>
+        <span>Logout</span>
+      </button>
+     </div>
+
+     <!-- Main Content -->
+      <div class="main-content">
+        <!-- Navbar -->
+         <div class="navbar">
+         <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#" >Projects</a></li>
+           <li><a href="#">Tasks</a></li>
+            <li><a href="#">Tickets</a></li>
+           <li><a href="#" class="active">Chat</a></li>
+           <li><a href="#">Reports</a></li>
+         </ul>
+         <div class="nav-icons">
+          <div class="search-container">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          <input type="text" placeholder="Search" class="search-box">
+          </div>
+          <div class="right-section"></div>
+         <i class="fa-solid fa-bell"></i>
+          <span class="notification" >Notifications</span>
+          <i class="fa-solid fa-user"></i>
+         </div>
+         </div>
+         <div class="chat-section">
+  <!-- Chat Header -->
+  <div class="chat-header">
+    <h2>General</h2>
+    <div class="chat-tools">
+      <input type="text" placeholder="Search" class="search-box" />
+      <button class="icon-btn" > <i class="fa-solid fa-phone"></i></button>
+      <button class="icon-btn"> <i class="fa-solid fa-video"></i></button>
+    </div>
+  </div>
+
+  <!-- Chat Messages -->
+  <div class="chat-messages">
+    <!-- Message 1 -->
+    <div class="message">
+      <div class="avatar">S</div>
+      <div class="message-content">
+        <p class="name">Sarah Brown</p>
+        <p class="text">Msg...</p>
+        <span class="time">10:00 AM</span>
+      </div>
+    </div>
+
+    <div class="reply">
+      <p>msg...</p>
+      <span class="time">10:05 AM</span>
+    </div>
+
+    <!-- Message 2 -->
+    <div class="message">
+      <div class="avatar">M</div>
+      <div class="message-content">
+        <p class="name">Michael Chen</p>
+        <p class="text">mgs...</p>
+        <div class="attachment">📎 Dashboard_Wireframe_v2.pdf</div>
+        <span class="time">10:10 AM</span>
+      </div>
+    </div>
+
+    <div class="reply">
+      <p>msg..</p>
+      <span class="time">10:15 AM</span>
+    </div>
+
+    <!-- Message 3 -->
+    <div class="message">
+      <div class="avatar">E</div>
+      <div class="message-content">
+        <p class="name">Emily Davis</p>
+        <p class="text"> msg...</p>
+        <span class="time">10:20 AM</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Input -->
+  <div class="chat-input">
+    <input type="text" placeholder="Type your message here..." />
+    <button>➤</button>
+  </div>
+</div>
