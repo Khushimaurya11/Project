@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Create New Project</title>
+    <link rel="stylesheet" href="assignTask.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+  </head>
+  <body>
+    <!-- Sidebar -->
+     <div class="sidebar">
+      <div class="logo">LOGO</div>
+      <ul>
+        <li><a href="#"><i class="fa-regular fa-house"></i>Admin Dashboard</a></li>
+       <li> <a href="#"><i class="fa-regular fa-bars-progress"></i>Projects</a></li>
+       <li><a href="#"> <i class="fa-solid fa-list-check"></i>Tasks</a></li>
+        <li><a href="#"> <i class="fa-regular fa-ticket"></i> Tickets</a></li>
+        <li><a href="#"><i class="fa-regular fa-flag"></i>Reports</a></li>
+        <li><a href="#"> <i class="fa-solid fa-gear"></i>Settings</a></li>
+      </ul>
+       <button class="logout"> <i class="fa-solid fa-arrow-right-from-bracket"></i>
+        <span>Logout</span>
+      </button>
+     </div>
+     <div class="main-content">
+        <!-- Navbar -->
+         <div class="navbar">
+         <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#" class="active">Projects</a></li>
+           <li><a href="#">Tasks</a></li>
+            <li><a href="#">Tickets</a></li>
+           <li><a href="#">Chat</a></li>
+           <li><a href="#">Reports</a></li>
+         </ul>
+         <div class="nav-icons">
+          <div class="search-container">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          <input type="text" placeholder="Search" class="search-box">
+          </div>
+          <div class="right-section"></div>
+         <i class="fa-solid fa-bell"></i>
+          <span class="notification" >Notifications</span>
+          <i class="fa-solid fa-user"></i>
+         </div>
+         </div>
+         <main class="container">
+  <!-- Left Section -->
+  <section class="left">
+    <!-- Assign Sub-Task -->
+    <div class="card">
+      <h2>Assign Sub-Task</h2>
+      <div class="form-row">
+        <input type="text" placeholder="Enter sub-task title">
+        <select>
+          <option>Select assignee</option>
+        </select>
+      </div>
+      <input type="date">
+      <button class="btn">+ Add Sub-task</button>
+    </div>
+
+    <!-- Project Progress -->
+    <div class="card">
+      <h2>Project Progress</h2>
+      <p>Overall Completion</p>
+      <div class="progress">
+        <div class="progress-bar" style="width: 75%;"></div>
+      </div>
+    </div>
+
+    <!-- Project Files -->
+    <div class="card">
+      <h2>Project Files</h2>
+      <ul class="files">
+        <li>📎 Project Proposal v1.2.pdf <span>2.5 MB - 2024-07-01 ⬇</span></li>
+      </ul>
+      <div class="upload-box">Drag & Drop files here, or click to upload</div>
+    </div>
+  </section>
+
+  <!-- Right Section -->
+  <section class="right">
+    <div class="submit-box">
+      <div class="icon-user"><i class="fa-solid fa-user"></i></div>
+      <h2>Ready to Submit?</h2>
+      <p>Ensure all tasks are completed and files are reviewed before sending to the admin.</p>
+      <button class="btn">Send Completed Task to Admin</button>
+    </div>
+  </section>
+</main>
+</body>
+</html>
